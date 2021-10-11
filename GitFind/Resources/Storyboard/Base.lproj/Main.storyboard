@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6gp-AS-XPF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-Bold.ttf">
+            <string>TitilliumWeb-Bold</string>
+        </array>
+        <array key="TitilliumWeb-Regular.ttf">
+            <string>TitilliumWeb-Regular</string>
+        </array>
+        <array key="TitilliumWeb-SemiBold.ttf">
+            <string>TitilliumWeb-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="GitFind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1z-3h-D2g">
+                                <rect key="frame" x="132" y="208" width="150.5" height="73.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Git" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGh-Pb-293">
+                                        <rect key="frame" x="0.0" y="0.0" width="59.5" height="73.5"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Bold" family="Titillium Web" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaQ-kD-W0I">
+                                        <rect key="frame" x="59.5" y="0.0" width="91" height="73.5"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Bold" family="Titillium Web" pointSize="48"/>
+                                        <color key="textColor" red="1" green="0.57714688777923584" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore over 200+ million GitHub repositories online!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m4H-YA-YfE">
+                                <rect key="frame" x="100" y="281.5" width="214" height="55"/>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="18"/>
+                                <color key="textColor" red="0.55680578947067261" green="0.55690258741378784" blue="0.55679303407669067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_illustration" translatesAutoresizingMaskIntoConstraints="NO" id="Bxk-f9-gie">
+                                <rect key="frame" x="20" y="637" width="374" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="OI1-iK-0g5"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="733-rs-x3S" customClass="DesignableView" customModule="GitFind" customModuleProvider="target">
+                                <rect key="frame" x="30" y="360.5" width="354" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxc-bH-Vib" customClass="DesignableButton" customModule="GitFind" customModuleProvider="target">
+                                        <rect key="frame" x="298" y="5" width="50" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.57714688777923584" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="GwG-qw-JzY"/>
+                                            <constraint firstAttribute="height" constant="40" id="JpG-x8-OB6"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_search"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapSearchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J78-Qz-oY8"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search GitFind.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t66-LD-bf2">
+                                        <rect key="frame" x="20" y="2" width="268" height="46"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="t66-LD-bf2" secondAttribute="bottom" constant="2" id="9NX-Wf-iqa"/>
+                                    <constraint firstItem="t66-LD-bf2" firstAttribute="leading" secondItem="733-rs-x3S" secondAttribute="leading" constant="20" id="Df4-tm-Efa"/>
+                                    <constraint firstAttribute="height" constant="50" id="Tlc-Mk-cgX"/>
+                                    <constraint firstItem="t66-LD-bf2" firstAttribute="top" secondItem="733-rs-x3S" secondAttribute="top" constant="2" id="enw-Zw-eab"/>
+                                    <constraint firstItem="dxc-bH-Vib" firstAttribute="centerY" secondItem="733-rs-x3S" secondAttribute="centerY" id="s3y-US-5iS"/>
+                                    <constraint firstAttribute="trailing" secondItem="dxc-bH-Vib" secondAttribute="trailing" constant="6" id="yVa-Uz-sDw"/>
+                                    <constraint firstItem="dxc-bH-Vib" firstAttribute="leading" secondItem="t66-LD-bf2" secondAttribute="trailing" constant="10" id="yX3-Wg-1Uh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m4H-YA-YfE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="1Hc-vT-JV6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="733-rs-x3S" secondAttribute="trailing" constant="30" id="4MK-13-8dT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m4H-YA-YfE" secondAttribute="trailing" constant="100" id="4Vo-nR-61f"/>
+                            <constraint firstItem="733-rs-x3S" firstAttribute="top" secondItem="m4H-YA-YfE" secondAttribute="bottom" constant="24" id="AcE-t3-Oic"/>
+                            <constraint firstItem="m4H-YA-YfE" firstAttribute="top" secondItem="w1z-3h-D2g" secondAttribute="bottom" id="CTc-Jo-WiP"/>
+                            <constraint firstItem="Bxk-f9-gie" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DOH-Lo-UFB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bxk-f9-gie" secondAttribute="trailing" constant="20" id="MjT-nl-TbX"/>
+                            <constraint firstItem="w1z-3h-D2g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="NjX-nO-vGm"/>
+                            <constraint firstItem="w1z-3h-D2g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OzI-4o-VT1"/>
+                            <constraint firstItem="733-rs-x3S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="mjG-Cg-nzj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bxk-f9-gie" secondAttribute="bottom" constant="50" id="q2f-pB-TGO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KlJ-uN-vmO"/>
+                    <connections>
+                        <outlet property="searchButton" destination="dxc-bH-Vib" id="oMP-7P-bf5"/>
+                        <outlet property="searchTextField" destination="t66-LD-bf2" id="bN8-yr-Ari"/>
+                        <segue destination="FvE-HW-M0e" kind="show" identifier="showSearchResult" id="UNH-gm-q7k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="116.51785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pmV-T8-WbA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6gp-AS-XPF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qmz-69-CtY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.57714688777923584" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hpB-4L-RY0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yh0-ut-sg3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="117"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="XED-DD-dru">
+            <objects>
+                <viewController id="FvE-HW-M0e" customClass="SearchViewController" customModule="GitFind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yab-ZZ-u2g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BsR-Mc-ofJ">
+                                <rect key="frame" x="0.0" y="139" width="414" height="723"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="searchTableViewCell" rowHeight="120" id="Pez-Tj-UK9" customClass="SearchTableViewCell" customModule="GitFind" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pez-Tj-UK9" id="0rf-vZ-024">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xFc-bc-MEn" customClass="DesignableImageView" customModule="GitFind" customModuleProvider="target">
+                                                    <rect key="frame" x="30" y="16" width="26" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="0nv-qp-ad0"/>
+                                                        <constraint firstAttribute="width" constant="26" id="UrX-wU-7Ya"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="13"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWg-wq-lop">
+                                                    <rect key="frame" x="61" y="16.5" width="323" height="25"/>
+                                                    <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="16"/>
+                                                    <color key="textColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,320" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8HG-3V-tAu">
+                                                    <rect key="frame" x="55" y="74.5" width="80" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="aFY-XK-H9b"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="16"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwiftyCam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="be6-IN-w4Z">
+                                                    <rect key="frame" x="30" y="47" width="75" height="25"/>
+                                                    <fontDescription key="fontDescription" name="TitilliumWeb-Bold" family="Titillium Web" pointSize="16"/>
+                                                    <color key="textColor" red="1" green="0.57714688777923584" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="nhe-Z1-hEX">
+                                                    <rect key="frame" x="30" y="77" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="5Gs-UX-C4M"/>
+                                                        <constraint firstAttribute="height" constant="20" id="840-Kz-AsF"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lXM-Hq-A20">
+                                                    <rect key="frame" x="164" y="74.5" width="80" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="imX-NA-Ede"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="16"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_language" translatesAutoresizingMaskIntoConstraints="NO" id="V3x-sP-wLF">
+                                                    <rect key="frame" x="145" y="80" width="14" height="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="14" id="aDd-a3-8mf"/>
+                                                        <constraint firstAttribute="width" constant="14" id="poR-SN-w6R"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_external" translatesAutoresizingMaskIntoConstraints="NO" id="yEe-4h-vms">
+                                                    <rect key="frame" x="379" y="52.5" width="15" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="15" id="JcZ-KS-qPf"/>
+                                                        <constraint firstAttribute="height" constant="15" id="MYm-sw-hhO"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aWg-wq-lop" firstAttribute="leading" secondItem="xFc-bc-MEn" secondAttribute="trailing" constant="5" id="0Df-mz-1Y4"/>
+                                                <constraint firstItem="yEe-4h-vms" firstAttribute="trailing" secondItem="0rf-vZ-024" secondAttribute="trailingMargin" id="ASS-sg-MIT"/>
+                                                <constraint firstItem="yEe-4h-vms" firstAttribute="centerY" secondItem="0rf-vZ-024" secondAttribute="centerY" id="IJv-V3-p2u"/>
+                                                <constraint firstItem="8HG-3V-tAu" firstAttribute="centerY" secondItem="nhe-Z1-hEX" secondAttribute="centerY" id="Mhu-gA-Rc7"/>
+                                                <constraint firstItem="lXM-Hq-A20" firstAttribute="centerY" secondItem="V3x-sP-wLF" secondAttribute="centerY" id="Mrk-DT-1bp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aWg-wq-lop" secondAttribute="trailing" constant="10" id="Mtu-cO-eE1"/>
+                                                <constraint firstItem="be6-IN-w4Z" firstAttribute="leading" secondItem="xFc-bc-MEn" secondAttribute="leading" id="RLC-4o-8nP"/>
+                                                <constraint firstItem="nhe-Z1-hEX" firstAttribute="leading" secondItem="be6-IN-w4Z" secondAttribute="leading" id="TSf-gR-Q0k"/>
+                                                <constraint firstItem="xFc-bc-MEn" firstAttribute="leading" secondItem="0rf-vZ-024" secondAttribute="leadingMargin" constant="10" id="Yhl-NX-Ac4"/>
+                                                <constraint firstItem="xFc-bc-MEn" firstAttribute="top" secondItem="0rf-vZ-024" secondAttribute="topMargin" constant="5" id="a9K-hx-3eX"/>
+                                                <constraint firstItem="V3x-sP-wLF" firstAttribute="centerY" secondItem="8HG-3V-tAu" secondAttribute="centerY" id="ekR-ZV-P2t"/>
+                                                <constraint firstItem="be6-IN-w4Z" firstAttribute="top" secondItem="xFc-bc-MEn" secondAttribute="bottom" constant="5" id="hM3-Iw-bcK"/>
+                                                <constraint firstItem="lXM-Hq-A20" firstAttribute="leading" secondItem="V3x-sP-wLF" secondAttribute="trailing" constant="5" id="kDo-Ac-UlH"/>
+                                                <constraint firstItem="8HG-3V-tAu" firstAttribute="leading" secondItem="nhe-Z1-hEX" secondAttribute="trailing" constant="5" id="kMN-gR-kQY"/>
+                                                <constraint firstItem="nhe-Z1-hEX" firstAttribute="top" secondItem="be6-IN-w4Z" secondAttribute="bottom" constant="5" id="kcu-2b-p5X"/>
+                                                <constraint firstItem="aWg-wq-lop" firstAttribute="centerY" secondItem="xFc-bc-MEn" secondAttribute="centerY" id="nrU-zk-JIV"/>
+                                                <constraint firstItem="V3x-sP-wLF" firstAttribute="leading" secondItem="8HG-3V-tAu" secondAttribute="trailing" constant="10" id="p7I-3s-9BY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="profileImageView" destination="xFc-bc-MEn" id="OfA-48-zVu"/>
+                                            <outlet property="profileNameLabel" destination="aWg-wq-lop" id="hCD-Ie-Gea"/>
+                                            <outlet property="projectLanguageLabel" destination="lXM-Hq-A20" id="iAs-aI-tai"/>
+                                            <outlet property="projectNameLabel" destination="be6-IN-w4Z" id="Psa-1R-V3y"/>
+                                            <outlet property="projectStarLabel" destination="8HG-3V-tAu" id="yfm-GL-eyd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="EUF-BO-bMq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yel-bg-CTj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EUF-BO-bMq" firstAttribute="trailing" secondItem="Yel-bg-CTj" secondAttribute="trailing" id="0hg-A9-e6h"/>
+                            <constraint firstItem="BsR-Mc-ofJ" firstAttribute="top" secondItem="EUF-BO-bMq" secondAttribute="bottom" id="8Iw-rU-QmK"/>
+                            <constraint firstItem="EUF-BO-bMq" firstAttribute="top" secondItem="Yel-bg-CTj" secondAttribute="top" id="HEK-Sr-RFO"/>
+                            <constraint firstItem="Yel-bg-CTj" firstAttribute="bottom" secondItem="BsR-Mc-ofJ" secondAttribute="bottom" id="Kay-DI-wTi"/>
+                            <constraint firstItem="EUF-BO-bMq" firstAttribute="leading" secondItem="Yel-bg-CTj" secondAttribute="leading" id="Ugc-sL-YZW"/>
+                            <constraint firstItem="BsR-Mc-ofJ" firstAttribute="leading" secondItem="Yel-bg-CTj" secondAttribute="leading" id="d7T-sI-anH"/>
+                            <constraint firstItem="Yel-bg-CTj" firstAttribute="trailing" secondItem="BsR-Mc-ofJ" secondAttribute="trailing" id="ghl-8D-KeB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="cXF-ZA-yYe"/>
+                    <connections>
+                        <outlet property="searchBar" destination="EUF-BO-bMq" id="R4s-bS-xJD"/>
+                        <outlet property="tableView" destination="BsR-Mc-ofJ" id="ETG-aO-Kmu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="byn-BX-1PE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889.8550724637682" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="dxc-bH-Vib">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_external" width="15" height="15"/>
+        <image name="ic_illustration" width="326" height="177"/>
+        <image name="ic_language" width="14" height="14"/>
+        <image name="ic_search" width="30" height="30"/>
+        <image name="ic_star" width="19" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
